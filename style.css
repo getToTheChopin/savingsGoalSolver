@@ -1,0 +1,332 @@
+html, body {
+    font-family: helvetica;
+    font-size: 15;
+}
+
+#topGlobalDiv{
+    text-align:center;
+}
+
+#headerPara{
+	margin-bottom:0.3em;
+	margin-top:1em;
+}
+
+@media (min-width: 850px) {
+    #assumptionSectionDiv, #outputTextSectionDiv{
+        width:395px;
+        display: inline-block;
+        vertical-align: middle;
+        border: 2px solid rgb(0, 30, 87);
+        box-shadow: 3px 3px 6px grey;
+    }
+}
+
+#assumptionSectionDiv, #outputTextSectionDiv {
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align:center;
+}
+
+th {
+    padding: 5px;
+    text-align: center;
+    vertical-align:middle;
+    background-color: rgb(228, 228, 228);
+	border-collapse: collapse;
+}
+
+table {
+    table-layout: fixed;
+    margin-top:3%;
+    margin-bottom:3%;
+	font-size:0.9em;
+    border-collapse: collapse;
+    width:350px;
+}
+
+td {
+    border-bottom: 1px solid rgb(0, 30, 87);
+	border-top: 1px solid rgb(0, 30, 87);
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+	border-collapse: collapse;
+}
+
+.tableCellNoBottomBorder{
+    border-bottom: none;
+}
+
+.tableCellNoTopBorder{
+    border-top: none;
+}
+
+.col2{
+    text-align: right;
+    font-size:0.9em;
+    font-style: italic;
+}
+
+.outputCell {
+    font-size:1.1em;
+    border-top: 3px solid rgb(236,180,50);
+    border-bottom: 3px solid rgb(236,180,50);
+    font-weight:bold;
+}
+
+#solveVariable {
+    font-size:1em;
+    border: 3px solid rgb(236,180,50);
+    border-radius:5px;
+    font-family: helvetica;
+    font-weight:normal;
+}
+
+.assumptionTableDiv, .outputTableDiv{
+	margin: auto;
+	text-align: center;
+    padding:2px;
+    width:350px;
+}
+
+#outputTextDiv {
+    text-align:left;
+    display:block;
+    margin:auto;
+    padding:3px;
+    width:350px;
+    max-width:90%;
+    background-color: rgb(228, 228, 228);
+    border-bottom: 3px solid white;
+    border-top: 6px solid white;
+    margin-top:10px;
+}
+
+#outputTextDiv2 {
+    text-align:left;
+    display:block;
+    margin:auto;
+    padding:3px;
+    width:350px;
+    max-width:90%;
+    background-color: rgb(236, 241, 255);
+    border-bottom: 6px solid white;
+    border-top: 3px solid white;
+    margin-bottom:10px;
+}
+
+#outputTextDiv.p, #outputTextDiv2.p{
+    margin: 1em 0 1em 0;
+}
+
+#textOutputKey{
+    font-size:1.2em;
+    font-weight:bold;
+}
+
+#outputBarChartDiv {
+    width:95%;
+    max-width:800px;
+    padding:4px;
+    background-color: white;
+    /*position:relative;*/
+    display:block;
+    height:50vh;
+	max-height: 600px;
+    margin: auto;
+	text-align: center;
+    margin-top:15px;
+    margin-bottom:15px;
+    border: 2px solid rgb(0, 30, 87);
+    box-shadow: 3px 3px 6px grey;
+}
+
+
+
+
+.userInput, .userInput1, .userInput2{
+    font-weight:bold;
+    padding:1px;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    text-align:center;
+    font-family:helvetica;
+    font-size:0.9em;
+    width: 100px;
+    max-width:80%;
+    
+    -moz-appearance: textfield;
+    border:1px solid rgb(180, 180, 180);
+    padding: 4px 0 4px 0;
+}
+
+input[type=number].input-number–noSpinners::-webkit-inner-spin-button,
+input[type=number].input-number–noSpinners::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    border:1px solid rgb(180, 180, 180);
+    padding: 4px 0 4px 0;
+}
+
+input[type=number]:hover{
+    background-color: rgb(246, 252, 255);
+    border:1px solid rgb(146, 146, 146);
+}
+
+
+#dropDownDiv {
+    text-align:center;
+    margin:auto;
+}
+
+.dropDown {
+
+	font-weight: bold;
+	padding: 4px 8px 4px 8px;
+	border-radius: 4px;
+    margin-bottom: 3px;
+    display:block;
+    text-align:center;
+    margin:auto;
+	
+}
+
+#regionDropDownListA{
+    border:2px solid #0071B3;
+	color: #0071B3;
+}
+
+#regionDropDownListB{
+    border:2px solid #B31B20;
+	color: #B31B20;
+}
+
+#totalPreTaxIncomeRow{
+    font-weight:bold;
+    font-size:1em;
+}
+
+.totalPreTaxIncomeData {
+    border-top: 2px solid #31D0CB;
+    border-bottom: 2px solid #31D0CB;
+}
+
+
+
+/* css as usual */
+#mainTable{
+    margin:auto;
+    font-size:0.6em;
+    overflow-x:scroll;
+    width:95%;
+    max-width:700px;
+    display:block;
+}
+
+/* conditional for screen size minimum of 500px */
+@media (min-width:700px) {
+  /* your conditional / responsive CSS inside this condition */
+  
+    #mainTable{
+        margin:auto;
+        font-size:0.75em;
+        overflow-x:scroll;
+        width:95%;
+        max-width:700px;
+        display:block;
+    }
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+::-webkit-scrollbar:vertical {
+    width: 12px;
+}
+
+::-webkit-scrollbar:horizontal {
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: #ffffff; 
+}
+
+
+.column0{
+    font-size:1.1em;
+}
+
+.column0, .column1, .column7, .column8 {
+    font-weight:bold;
+}
+
+.column2, .column3, .column4, .column5, .column6 {
+    font-style: italic;
+}
+
+#analysis2Assumption, #analysis2Label {
+    font-weight:bold;
+    font-size:1em;
+    border-top: 2px solid #31D0CB;
+    border-bottom: 2px solid #31D0CB;
+}
+
+#afterTaxIncomeAssumption{
+    font-size:1em; 
+}
+
+.analysis3Assumption {
+    font-weight:bold;
+    font-size:1em;  
+}
+
+
+#moreInfoDiv{
+    text-align: center;
+    margin:auto;
+    padding-top:1%;
+    padding-bottom:0%;
+}
+
+#moreInfoButton{
+    font-size:1.2em;
+    color: rgb(77, 77, 77);
+    cursor: pointer;
+}
+
+#incomeDescriptionDiv{
+    font-size:0.8em;
+    padding: 3px 6px 0% 6px;
+    margin:1%;
+    border: 1px dotted gray;
+}
+
+.hide{
+    display:none;
+}
+
+#analysisNotesDiv{
+    font-size:0.8em;
+}
+
+#analysis2Note{
+    font-size:0.8em;
+}
+
+.hide{
+    display:none;
+}
