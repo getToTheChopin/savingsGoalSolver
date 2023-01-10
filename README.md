@@ -1,1 +1,0 @@
-Quickly figure out what it'll take to reach your financial goals with this simple tool.
