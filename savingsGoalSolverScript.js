@@ -598,4 +598,3 @@ function solveRate (periods, payment, present, future, type, guess) {
     }
     return rate;
 }
-
